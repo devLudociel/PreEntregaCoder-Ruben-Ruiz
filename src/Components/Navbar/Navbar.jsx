@@ -19,15 +19,15 @@ const Navbar = () => {
                 </li>
 
                 <li className="item">
-                    <a href="/">Productos</a>
+                    <a href="/">Bases</a>
                 </li>
 
                 <li className="item">
-                    <a href="/">Ofertas</a>
+                    <a href="/">Compactos</a>
                 </li>
 
                 <li className="item">
-                    <a href="/">contacto</a>
+                    <a href="/">Labiales</a>
                 </li>
             </div>
 
