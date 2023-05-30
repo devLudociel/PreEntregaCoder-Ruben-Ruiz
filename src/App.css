@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;700&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   transition: .3s ease;
-}
+} */
 
 /* Colores y estilos de la aplicación*/
 
@@ -50,7 +50,7 @@ li{
 }
 
 img{
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -97,18 +97,18 @@ body{
 .container{
   position: relative;
   width: 95vw;
-  height: 95vh;
-  display: flex;
+  /* height: 95vh; 
+  display: flex;  */
   align-items: center;
   justify-content: center;
   background: var(--bg-300);
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 2px 2px 8px var(--text-200);
-}
+} */
 
 /*Esconder el scroll*/
 
 ::-webkit-scrollbar{
   display: none;
-}
+} 

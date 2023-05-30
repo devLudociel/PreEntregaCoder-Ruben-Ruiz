@@ -1,12 +1,14 @@
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
+import SideBar from './Components/SideBar/SideBar'
 import Body from './Components/BodySection/Body/Body'
 function App() {
 
   return (
-    <div className="container">
+    <div className='container'>
       <Navbar />
-      <Body />
+      {/* <SideBar /> */}
+      {/* <Body /> */}
     </div>
   )
 }
