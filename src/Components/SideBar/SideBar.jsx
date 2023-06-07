@@ -5,12 +5,11 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {AiOutlineHome} from 'react-icons/ai'
 import {BsBoxSeam} from 'react-icons/bs'
 import {MdOutlineLocalOffer} from 'react-icons/md'
-import {MdOutlineContactPhone} from 'react-icons/md'
 import {VscAccount} from 'react-icons/vsc'
 import {SlSocialInstagram} from 'react-icons/sl'
 import {BsFacebook} from 'react-icons/bs'
 import {FaTiktok} from 'react-icons/fa'
-
+import {BsQuestionCircle} from 'react-icons/bs'
 
 
 
@@ -109,6 +108,19 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className="sideBarCard">
+        <BsQuestionCircle className="icon"/>
+          <div className="cardContent">
+            <div className="circle1"></div>
+            <div className="circle2"></div>
+
+            <h3>Centro de Ayuda</h3>
+            <p>¿Tienes Algun Problema con la Plataforma?, Contactanos</p>
+
+            <button className='btn'>Ir al Centro de Ayuda</button>
+          </div>
       </div>
     </div>
     

@@ -7,10 +7,10 @@ function App() {
 
   return (
     <div className='container'>
-      <Navbar />
-      <ItemListContainer greeting={"Esperamos volver a verte Pronto"}/>
-      {/* <SideBar /> */}
-      {/* <Body /> */}
+      {/* <Navbar />
+      <ItemListContainer greeting={"Esperamos volver a verte Pronto"}/> */}
+      <SideBar /> 
+      <Body />
     </div>
   )
 }

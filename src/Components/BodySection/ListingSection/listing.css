@@ -1,1 +1,125 @@
-/*# sourceMappingURL=listing.css.map */
+@charset "UTF-8";
+:root {
+  --primary-100:#FFDAB9;
+  --primary-200:#dfb28a;
+  --primary-300:#8c633c;
+  --accent-100:#ffbda3;
+  --accent-200:#975f48;
+  --text-100:#000000;
+  --text-200:#615353;
+  --text-300:#fff;
+  --bg-100:#F9AFAF;
+  --bg-200:#eea5a5;
+  --bg-300:#c57f80;
+  /*Fuentes y Tamaños*/
+  --bigFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallerFontSize: .75rem;
+}
+
+.listingSection {
+  flex-basis: 70%;
+}
+.listingSection .heading {
+  width: 100%;
+  justify-content: space-between;
+  color: var(--text-300);
+}
+.listingSection .heading h1 {
+  font-size: var(--h2FontSize);
+  color: var(--text-300);
+  font-weight: 700;
+}
+.listingSection .heading .btn {
+  box-shadow: none;
+  font-weight: 500;
+}
+.listingSection .secContainer {
+  width: 100%;
+  margin: 1rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listingSection .secContainer .singleItem {
+  position: relative;
+  width: 150px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--bg-200);
+}
+.listingSection .secContainer .singleItem:hover {
+  background: var(--bg-100);
+  box-shadow: 0 2px 2px var(--text-200);
+}
+.listingSection .secContainer .singleItem img {
+  max-width: 100px;
+}
+.listingSection .secContainer .singleItem .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--text-300);
+}
+.listingSection .secContainer .singleItem h3 {
+  color: var(--text-300);
+  font-size: var(--h3FontSize);
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.seller {
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+.seller .topSellers .heading {
+  padding: 1rem 0;
+}
+.seller .topSellers .heading .btn {
+  padding: 0.5rem 1rem;
+}
+.seller .topSellers .card {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--bg-200);
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--bg-200);
+}
+.seller .topSellers .card .users {
+  padding-right: 1rem;
+  border-right: 2px solid var(--text-200);
+}
+.seller .topSellers .card img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid var(--bg-300);
+  transition: 0.5s ease;
+}
+.seller .topSellers .card img:hover {
+  transform: translateY(-10px);
+}
+.seller .topSellers .card .cardText span {
+  color: var(--text-300);
+  font-weight: 500;
+}
+.seller .topSellers .card .cardText span small {
+  font-weight: 400;
+}
+.seller .topSellers .card .cardText span small .date {
+  margin-left: 1rem;
+}/*# sourceMappingURL=listing.css.map */
