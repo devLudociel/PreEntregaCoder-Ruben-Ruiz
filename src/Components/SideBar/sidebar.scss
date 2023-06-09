@@ -28,17 +28,17 @@
     height: 100%;
     gap: 1rem;
     overflow: auto;
+
+        .logoDiv{
+        padding: 1rem 2rem 0;
+        cursor: pointer;
+    
+        img{
+            max-width: 160px;
+        }
+        }
   }
 
-  .logoDiv{
-    padding: 1rem 1rem 0;
-    cursor: pointer;
-
-    img{
-        max-width: 160px;
-        margin-left: 1rem;
-    }
-  }
 
   .menuDiv, .settingsDiv{
     .divTitle{
@@ -162,6 +162,74 @@
                 bottom: -80px;
                 right: -70px;
                 z-index: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width:820px){
+        .navbar{
+            padding-bottom: 2rem;
+
+            .sideBarCard{
+                display: none !important;
+            }
+        }
+    }
+
+    @media screen and (max-width:745px){
+        .navbar{
+            .logoDiv{
+                text-align: center;
+                margin: auto;
+                padding: .2rem .3rem 0;
+
+                img{
+                    max-width: 100px;
+                    border-radius: 10px;
+                    padding: .5rem;
+                }
+
+                h3{
+                    display: none;
+                }
+            }
+            .menuDiv,.settingsDiv{
+                .divTitle, .smallText{
+                    display: none;
+                }
+
+                .menuList{
+                    .listItem{
+                        .menuLink{
+                            justify-content: center;
+
+                            .icon{
+                                font-size: var(--h1FontSize);
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+
+    }
+
+    @media screen and (max-width:390px){
+        .navbar{
+            .menuDiv, .settingsDiv{
+                .menuList{
+                    .listItem{
+                        padding: .2rem .5rem;
+
+                        .menuLink{
+                            justify-content: center;
+
+                            .icon{
+                                font-size: var(--h2FontSize);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

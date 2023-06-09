@@ -22,7 +22,7 @@
 }
 
 .listingSection {
-  flex-basis: 70%;
+  flex-basis: 80%;
 }
 .listingSection .heading {
   width: 100%;
@@ -47,7 +47,7 @@
 }
 .listingSection .secContainer .singleItem {
   position: relative;
-  width: 150px;
+  width: 130px;
   height: 170px;
   display: flex;
   align-items: center;
@@ -84,24 +84,24 @@
   align-items: center;
   cursor: pointer;
 }
-.seller .topSellers .heading {
+.seller .topSellers .heading, .seller .feacturedSellers .heading {
   padding: 1rem 0;
 }
-.seller .topSellers .heading .btn {
+.seller .topSellers .heading .btn, .seller .feacturedSellers .heading .btn {
   padding: 0.5rem 1rem;
 }
-.seller .topSellers .card {
+.seller .topSellers .card, .seller .feacturedSellers .card {
   padding: 1rem;
   border-radius: 1rem;
   background: var(--bg-200);
   gap: 1rem;
   box-shadow: 0 2px 4px var(--bg-200);
 }
-.seller .topSellers .card .users {
+.seller .topSellers .card .users, .seller .feacturedSellers .card .users {
   padding-right: 1rem;
   border-right: 2px solid var(--text-200);
 }
-.seller .topSellers .card img {
+.seller .topSellers .card img, .seller .feacturedSellers .card img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -109,17 +109,37 @@
      object-fit: cover;
   border: 2px solid var(--bg-300);
   transition: 0.5s ease;
+  aspect-ratio: 1/1;
 }
-.seller .topSellers .card img:hover {
+.seller .topSellers .card img:hover, .seller .feacturedSellers .card img:hover {
   transform: translateY(-10px);
 }
-.seller .topSellers .card .cardText span {
+.seller .topSellers .card .cardText span, .seller .feacturedSellers .card .cardText span {
   color: var(--text-300);
   font-weight: 500;
 }
-.seller .topSellers .card .cardText span small {
+.seller .topSellers .card .cardText span small, .seller .feacturedSellers .card .cardText span small {
   font-weight: 400;
 }
-.seller .topSellers .card .cardText span small .date {
+.seller .topSellers .card .cardText span small .date, .seller .feacturedSellers .card .cardText span small .date {
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .listingSection .seller .card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 918px) {
+  .listingSection .singleItem {
+    width: 200px !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  .listingSection .seller {
+    flex-direction: column;
+  }
+  .listingSection .seller .card {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=listing.css.map */

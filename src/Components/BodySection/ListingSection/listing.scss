@@ -22,7 +22,7 @@
   }
 
   .listingSection{
-    flex-basis: 70%;
+    flex-basis: 80%;
 
 
     .heading{
@@ -45,13 +45,13 @@
     .secContainer{
       width: 100%;
       margin: 1rem 0;
-      gap: 1rem;
+      gap:1rem;
       flex-wrap: wrap;
       justify-content: space-between;
 
       .singleItem{
         position: relative;
-        width: 150px;
+        width: 130px;
         height: 170px;
         display: flex;
         align-items: center;
@@ -96,7 +96,7 @@
     align-items: center;
     cursor: pointer;
 
-    .topSellers{
+    .topSellers, .feacturedSellers{
       .heading{
         padding: 1rem 0;
 
@@ -125,6 +125,7 @@
           object-fit: cover;
           border: 2px solid var(--bg-300);
           transition: .5s ease;
+          aspect-ratio: 1/1;
 
           &:hover{
             transform: translateY(-10px);
@@ -145,6 +146,35 @@
           }
         }
       }
+      }
+    }
+  }
+
+  @media screen and (max-width:990px){
+    .listingSection{
+      .seller{
+        .card{
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:918px){
+    .listingSection{
+      .singleItem{
+        width: 200px !important;
+      }
+    }
+  }
+
+  @media screen and (max-width:490px){
+    .listingSection{
+      .seller{
+        flex-direction: column;
+        .card{
+          flex-direction: row;
+        }
       }
     }
   }

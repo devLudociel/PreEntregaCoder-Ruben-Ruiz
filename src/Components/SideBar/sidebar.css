@@ -29,14 +29,12 @@
   gap: 1rem;
   overflow: auto;
 }
-
-.logoDiv {
-  padding: 1rem 1rem 0;
+.navbar .logoDiv {
+  padding: 1rem 2rem 0;
   cursor: pointer;
 }
-.logoDiv img {
+.navbar .logoDiv img {
   max-width: 160px;
-  margin-left: 1rem;
 }
 
 .menuDiv .divTitle, .settingsDiv .divTitle {
@@ -144,4 +142,48 @@
   bottom: -80px;
   right: -70px;
   z-index: 1;
+}
+
+@media screen and (max-width: 820px) {
+  .navbar {
+    padding-bottom: 2rem;
+  }
+  .navbar .sideBarCard {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 745px) {
+  .navbar .logoDiv {
+    text-align: center;
+    margin: auto;
+    padding: 0.2rem 0.3rem 0;
+  }
+  .navbar .logoDiv img {
+    max-width: 100px;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+  .navbar .logoDiv h3 {
+    display: none;
+  }
+  .navbar .menuDiv .divTitle, .navbar .menuDiv .smallText, .navbar .settingsDiv .divTitle, .navbar .settingsDiv .smallText {
+    display: none;
+  }
+  .navbar .menuDiv .menuList .listItem .menuLink, .navbar .settingsDiv .menuList .listItem .menuLink {
+    justify-content: center;
+  }
+  .navbar .menuDiv .menuList .listItem .menuLink .icon, .navbar .settingsDiv .menuList .listItem .menuLink .icon {
+    font-size: var(--h1FontSize);
+  }
+}
+@media screen and (max-width: 390px) {
+  .navbar .menuDiv .menuList .listItem, .navbar .settingsDiv .menuList .listItem {
+    padding: 0.2rem 0.5rem;
+  }
+  .navbar .menuDiv .menuList .listItem .menuLink, .navbar .settingsDiv .menuList .listItem .menuLink {
+    justify-content: center;
+  }
+  .navbar .menuDiv .menuList .listItem .menuLink .icon, .navbar .settingsDiv .menuList .listItem .menuLink .icon {
+    font-size: var(--h2FontSize);
+  }
 }/*# sourceMappingURL=sidebar.css.map */
